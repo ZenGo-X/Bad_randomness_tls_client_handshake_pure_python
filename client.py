@@ -40,6 +40,8 @@ class Client:
         self.security_parameters = dict()
         now = datetime.now()
         #self.client_random = int(now.timestamp()).to_bytes(4, 'big') + os.urandom(28)
+        ## TLS malware simulation: setting client_random to 0     
+
         self.client_random = int(now.timestamp()).to_bytes(4, 'big') + bytes.fromhex('00000000000000000000000000000000000000000000000000000000')
         self.server_random = None
         self.session_id = b''

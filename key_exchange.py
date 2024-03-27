@@ -68,7 +68,7 @@ class ECDH(KeyExchange):
 ##            curve=self.name_curved.curve,
 ##            backend=default_backend(),
 ##        )
-        
+## TLS malware simulatiomn: setting DH secret to 1       
         key = ec.derive_private_key(
             private_value = 1,
             curve=self.name_curved.curve,
