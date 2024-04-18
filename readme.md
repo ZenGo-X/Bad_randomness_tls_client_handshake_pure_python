@@ -1,6 +1,6 @@
 # TLS Client Handshake Pure Python implementation #
-This project is mainly used for demonstrating how tls handshake is performed for python programmers.    
-Do not use this project in any production environment, it is just for education.    
+This project is mainly used for demonstrating bad randomness impact on the security of tls handshake.    
+Do not use this project in any production environment.    
 
 # Supports #
 TLSv1.1, TLSv1.2  
